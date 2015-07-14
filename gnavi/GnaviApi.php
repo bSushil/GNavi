@@ -20,6 +20,7 @@ class GnaviApi {
     }
 
     protected function _doGet($uri, $query=array()) {
+        //var_dump($query);
         $query['keyid'] = $this->apikey;
         $qs = http_build_query($query);
         $url = self::API_BASE . "$uri?$qs";

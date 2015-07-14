@@ -2,6 +2,7 @@
 namespace GNavi\Api;
 
 use GNavi\Api\GnaviApi;
+use \stdClass;
 
 class GnaviPrefSearchApi extends GnaviApi {
 
