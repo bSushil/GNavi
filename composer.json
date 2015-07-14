@@ -1,0 +1,24 @@
+{
+    "name": "gnavi/gnavi-api",
+    "description": "Gurunavi API - PHP",
+    "version": "1.0.0",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "keywords": ["gurunavi","gnavi","products","search"],
+    "homepage": "https://github.com/bSushil/gnavi",
+    "authors": [
+        {
+            "name": "Sushil Bajimaya",
+            "email": "sushil.bajimaya@gmail.com",
+            "role" : "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "GNavi\\Api\\": "gnavi/"
+        }
+    }
+}
