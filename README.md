@@ -4,7 +4,7 @@ Yii2 library for gnavi.co.jp based upon https://github.com/fukata/php-gnavi
 
 ## How to
 
-    require_once 'gnavi/Gnavi.php';
+    use GNavi\Api;
 
     $apikey = 'Your API KEY';
     $query = array(
