@@ -26,7 +26,7 @@ class GnaviRestSearchApi extends GnaviApi {
     );
 
     public function execute($query=array()) {
-        $content = $this->_doGet("/RestSearchAPI/", $query);
+        $content = $this->_doGet("ForeignRestSearchAPI/20150630/", $query);
         $data = $this->_parse($content);
         return $data;
     }
@@ -91,14 +91,14 @@ class GnaviRestSearchApi extends GnaviApi {
 
                 $codes = array();
                 $names = array();
-                foreach ( $r->code->$key_code as $n ) {
+                /*foreach ( $r->code->$key_code as $n ) {
                     $codes[] = (string)$n;
                 }
                 foreach ( $r->code->$key_name as $n ) {
                     $names[] = (string)$n;
-                }
+                }*/
 
-                $rest->code->$key_categories = array();
+                /*$rest->code->$key_categories = array();
                 for ( $i=0; $i<count($codes); $i++ ) {
                     array_push(
                         $rest->code->$key_categories,
@@ -107,7 +107,7 @@ class GnaviRestSearchApi extends GnaviApi {
                             'name' => $names[$i],
                         )
                     );
-                }
+                }*/
             }
 
             // flags

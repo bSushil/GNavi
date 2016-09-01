@@ -2,7 +2,7 @@
 namespace GNavi\Api;
 
 class GnaviApi {
-    const API_BASE = "http://api.gnavi.co.jp/ver1";
+    const API_BASE = "http://api.gnavi.co.jp/";
 
     protected $apikey;
     
@@ -14,6 +14,7 @@ class GnaviApi {
         $data = (object) array(
             'error' => (object) array(
                 'code' => (string)$xml->error->code,
+                'message'=> $xml->error->message
             ),
         );
         return $data;
